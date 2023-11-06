@@ -1,0 +1,48 @@
+name: React App Deployment
+
+on:
+  push:
+    branches:
+      - deploy-react-app
+
+jobs:
+  deploy-react-to-gh-pages:
+    runs-on: ubuntu-latest
+    env:
+      EXAMPLE: example
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: "14" # Change to a suitable Node.js version
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install dependencies
+        run: |
+          npm ci # Use 'npm ci' for clean installs
+          npm audit # Run an npm audit for security checks
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+
+      - name: Test Deployed Application
+        run: |
+          curl -sS https://your-app-url.com # Replace with your app's URL
+          # Add more comprehensive tests here
