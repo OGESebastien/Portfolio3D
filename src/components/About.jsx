@@ -40,18 +40,14 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>Présentation.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+    Après avoir connu une carrière dans le football national en Allemagne, j'ai décidé de faire une transition vers le domaine de l'informatique. Actuellement étudiant à Epitech en Pré-Master, je suis passionné par le développement web et les applications. À la recherche d'une opportunité d'alternance, je suis motivé pour appliquer mes compétences techniques et ma passion pour la technologie dans un environnement professionnel stimulant.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

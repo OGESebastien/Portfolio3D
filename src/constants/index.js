@@ -28,33 +28,33 @@ import {
 export const navLinks = [
   {
     id: "about",
-    title: "About",
+    title: "A propos",
   },
   {
     id: "work",
-    title: "Work",
+    title: "Mon parcours",
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "Me contacter",
   },
 ];
 
 const services = [
   {
-    title: "Web Developer",
+    title: "BTS MCO Management Commercial Opérationnel (IESA)",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "LICENCE professionnelle Droit Economie Gestion (CNAM)",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "PRÉ-MASTER Architecte logiciel et développeur d'application (EPITECH)",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "MASTER 1 MASTER 2 Architecte logiciel et développeur d'application (EPITECH)",
     icon: creator,
   },
 ];
@@ -116,8 +116,8 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Téléconseiller",
+    company_name: "BMW",
     icon: starbucks,
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
@@ -129,8 +129,8 @@ const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Assistant Manager",
+    company_name: "Norauto",
     icon: tesla,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
@@ -142,8 +142,8 @@ const experiences = [
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Vendeur",
+    company_name: "Norauto",
     icon: shopify,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
