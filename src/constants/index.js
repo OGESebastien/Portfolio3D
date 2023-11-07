@@ -125,28 +125,26 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "J'ai eu la chance de pouvoir jouer pendant plusieurs années au niveau national en Allemagne, une expérience qui m'a inculqué la rigueur.",
+    name: "Football",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Après le football j'ai choisi la boxe. Chaque entraînement, chaque combat nourrit mon esprit de détermination.",
+    name: "Arts martiaux",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "En plus de mes séances de boxe, je m'entraîne également en musculation pour renforcer mon corps et améliorer mes performances globales.",
+    name: "Musculation",
   },
+  {
+    testimonial:
+      "Après avoir voyagé une dizaine de fois dans mon pays natal, la Thaïlande. Mon objectif est de découvrir de nouveaux horizons en visitant d'autres pays.",
+    name: "Voyages",
+
+  },
+  
 ];
 
 const projects = [
