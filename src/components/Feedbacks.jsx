@@ -40,16 +40,16 @@ const FeedbackCard = ({
 
 const Feedbacks = () => {
   return (
-    <div className="mt-12 bg-black-100 rounded-[20px]">
+    <div className="flex-col flex items-center justify-center mt-12 bg-black-100 rounded-[20px]">
       <div
-        className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}
+        className={`${styles.padding}  rounded-2xl min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>Me connaître</p>
           <h2 className={styles.sectionHeadText}>Mes passions</h2>
         </motion.div>
       </div>
-      <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
+      <div className={`${styles.paddingX} flex-col md:flex-row flex items-center justify-center -mt-20 pb-14 flex flex-wrap gap-7`}>
         {testimonials.map((testimonial, index) => (
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
         ))}
