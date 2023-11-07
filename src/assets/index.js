@@ -29,6 +29,10 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import offre from "./offre-emploi.png";
+import mario from "./mario.png";
+import pendu from "./pendu.png";
+import asie from "./asie.png";
 
 export {
   logo,
@@ -59,4 +63,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  offre,
+  mario,
+  pendu,
+  asie,
 };

@@ -23,6 +23,11 @@ import {
   jobit,
   tripguide,
   threejs,
+  offre,
+  mario,
+  pendu,
+  asie,
+
 } from "../assets";
 
 export const navLinks = [
@@ -73,32 +78,12 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
   {
     name: "git",
@@ -108,10 +93,6 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences = [
@@ -120,51 +101,23 @@ const experiences = [
     company_name: "BMW",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "05/2023-09/2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Former de nouveaux téléconseillers sur les techniques de vente et de communication.",
+      "Réaliser un taux de satisfaction client de 95% grâce à une approche personnalisée et une écoute active.",
+      "Collaborer avec une équipe de téléconseillers pour partager les meilleures pratiques et améliorer les performances collectives.",
     ],
   },
   {
-    title: "Assistant Manager",
+    title: "Assistant manager",
     company_name: "Norauto",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "01/2019 - 01/2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Vendeur",
-    company_name: "Norauto",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Gérer les stockes et les commandes, garantissant une disponibilité continue des produits.",
+      "Former et encadrer de nouveaux membres de l'équipe de vente, facilitant leur intégration rapide et améliorant leurs performances.",
+      "Organiser et participer à des événements promotionnels, accroissant la visibilité de l'entreprise et attirant de nouveaux clients",
     ],
   },
 ];
@@ -198,67 +151,81 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Site d'offre d'emploi",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Projet scolaire m'ayant permis de maîtriser, REACT, TAILWIND CSS, PHP ainsi que les réquêtes SQL",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
+        name: "tailwindCSS",
         color: "pink-text-gradient",
       },
+      {
+        name: "PHP",
+        color: "green-text-gradient",
+      },
+     
+      {
+        name: "SQL",
+        color: "blue-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: offre,
+    source_code_link: "https://github.com/OGESebastien",
   },
   {
-    name: "Job IT",
+    name: "Jeu Mario",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Création d'un jeu MArio avec Java et l'IDE ECLIPSE. L'objectif étant d'apprendre la programmation orienté objet.",
     tags: [
       {
-        name: "react",
+        name: "JAVA",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "ECLIPSE",
         color: "green-text-gradient",
       },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: mario,
+    source_code_link: "https://github.com/OGESebastien",
   },
   {
-    name: "Trip Guide",
+    name: "Jeu du pendu",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Avec Python, j'ai réaliser un jeu du pendu en utilisant l'IDE Visual Studio Code. Bien qu'il ne soit pas encore utilisable dans une interface graphique, il est fonctionnel.",
     tags: [
       {
-        name: "nextjs",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Visual Studio Code",
         color: "green-text-gradient",
       },
+    ],
+    image: pendu,
+    source_code_link: "https://github.com/OGESebastien",
+  },
+  {
+    name: "Site de voyage",
+    description:
+      "Utilisation du langage HTML et CSS pour réaliser, sans l'aide d'aucun framework, un site de voyage permettant de sélectionner différentes destinations en Asie. C'était mon tout premier projet, que j'ai présenté à EPITECH pour mon admission",
+    tags: [
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "Html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Css",
+        color: "green-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: asie,
+    source_code_link: "https://github.com/OGESebastien",
   },
 ];
 
