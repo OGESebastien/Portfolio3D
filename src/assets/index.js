@@ -33,6 +33,7 @@ import offre from "./offre-emploi.png";
 import mario from "./mario.png";
 import pendu from "./pendu.png";
 import asie from "./asie.png";
+import bitmoji from "./seb.png";
 
 export {
   logo,
@@ -67,4 +68,5 @@ export {
   mario,
   pendu,
   asie,
+  bitmoji,
 };

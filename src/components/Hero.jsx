@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { bitmoji } from "../assets";
+
 
 const Hero = () => {
   return (
@@ -25,7 +27,11 @@ const Hero = () => {
         </div>
       </div>
       
-      <ComputersCanvas />
+      {
+        window.innerWidth > 768 ? 
+        <ComputersCanvas /> : 
+        <img src={bitmoji} alt="bitmoji" id="bitmoji"/>
+      }
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">

@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import axios from "axios";
 
 const Contact = () => {
   const formRef = useRef();
@@ -25,38 +26,24 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .send(
-        "service_r0jcplm",
-        "template_1t76uxq",
-        {
-          form_name: form.name,
-          to_name: "Liron",
-          from_email: form.email,
-          to_email: "contact@mail.com",
-          message: form.message,
-        },
-        "Jqq9AvwIuSjoMiA5c"
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+    axios.defaults.headers.post["Content-Type"] = "application/json";
+    axios.post("https://formsubmit.co/ajax/oge.sebastien67@gmail.com",{
+      name: form.name,
+      email: form.email,
+      message: form.message,
+    })
+    .then((res) => {
+      console.log(res);
+      setLoading(false);
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      });
+    
+  });
+};
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-
-          console.log(error);
-          alert("Something went wrong.");
-        }
-      );
-  };
 
   return (
     <div
