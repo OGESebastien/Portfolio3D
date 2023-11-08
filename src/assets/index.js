@@ -34,6 +34,8 @@ import mario from "./mario.png";
 import pendu from "./pendu.png";
 import asie from "./asie.png";
 import bitmoji from "./seb.png";
+import norauto from "./norauto.png";
+import bmw from "./bmw.png";
 
 export {
   logo,
@@ -69,4 +71,6 @@ export {
   pendu,
   asie,
   bitmoji,
+  norauto,
+  bmw,
 };

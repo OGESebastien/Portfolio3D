@@ -27,6 +27,8 @@ import {
   mario,
   pendu,
   asie,
+  norauto,
+  bmw,
 
 } from "../assets";
 
@@ -99,7 +101,7 @@ const experiences = [
   {
     title: "Téléconseiller",
     company_name: "BMW",
-    icon: starbucks,
+    icon: bmw,
     iconBg: "#383E56",
     date: "05/2023-09/2023",
     points: [
@@ -111,7 +113,7 @@ const experiences = [
   {
     title: "Assistant manager",
     company_name: "Norauto",
-    icon: tesla,
+    icon: norauto,
     iconBg: "#E6DEDD",
     date: "01/2019 - 01/2022",
     points: [
